@@ -1,0 +1,101 @@
+h1 {
+  padding: 60px;
+  text-align: center;
+  background-color: #ffe6e6;
+  font-family: serif, Garamond;
+  font-size: 1.8em;
+  color: #803c00;
+  vertical-align: middle;
+}
+
+h2 {
+  font-family: serif, Garamond;
+}
+
+/* Box-sizing reset: //w3bits.com/?p=3225 */
+.navbar-brand {
+  font-family: serif, Garamond;
+}
+.navbar {
+  background-image: url('https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg?auto=compress&cs=tinysrgb&w=400');
+}
+.nav-item {
+  font-family: serif, Garamond;
+  font-color: #ffe6e6;
+}
+
+body  {
+  background-color: #cce6ff;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+.gallery img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+  max-width: 100%;
+}
+
+/* Masonry on large screens */
+@media screen and (max-width: 1024px) {
+  .gallery {
+    --num-cols: 2;
+    --row-height: 200px;
+  }
+}
+
+.polaroid a {
+    background: #ffffff;
+    display: inline-block;
+    margin: 55px 40% 30px;
+    padding: 15px 15px 30px;
+    text-align: center;
+    font-family: serif, Garamond;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -webkit-transition: all .20s linear;
+    -moz-transition: all .20s linear;
+    transition: all .20s linear;
+    z-index: 0;
+    position: relative;
+}
+.polaroid a:after {
+    color: #333;
+    font-size: 25px;
+    content: attr(title);
+    position: relative;
+    top: 15px;
+}
+.polaroid img {
+    display: block;
+    width: 250px;
+}
+.polaroid a:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index: 10;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+}
+
+.footer {
+  padding: 60px;
+  text-align: center;
+  background: #ffe6e6;
+  color: #803c00;
+}
+
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
